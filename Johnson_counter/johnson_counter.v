@@ -7,6 +7,6 @@ module johnson_counter(
         if (reset)
             q <= 4'b0000;
         else
-            q <= {q[2:0], ~q[3]};   // shift left, invert last bit into first
+            q <= {q[2:0], ~q[3]};  
     end
 endmodule
