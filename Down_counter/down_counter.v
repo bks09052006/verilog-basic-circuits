@@ -5,8 +5,8 @@ module down_counter(
 );
     always @(posedge clk or posedge reset) begin
         if (reset)
-            q <= 4'b1111;    // starts at 15, not 0
+            q <= 4'b1111;   
         else
-            q <= q - 1;      // decrement instead of increment
+            q <= q - 1;   
     end
 endmodule
