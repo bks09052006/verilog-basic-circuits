@@ -10,6 +10,6 @@ module syn_up_counter_structural_tb;
         clk = 0;
         reset = 1;
         #10 reset = 0;
-        #200 $finish;   // let it run long enough to see full count 0 to 15 and wrap back to 0
+        #200 $finish;  
     end
 endmodule
