@@ -10,6 +10,6 @@ module bcd_counter_tb;
         clk = 0;
         reset = 1;
         #10 reset = 0;
-        #200 $finish;   // long enough to see it wrap from 9 back to 0 a couple times
+        #200 $finish;  
     end
 endmodule
