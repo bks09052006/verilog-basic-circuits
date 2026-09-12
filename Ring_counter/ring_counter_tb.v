@@ -10,6 +10,6 @@ module ring_counter_tb;
         clk = 0;
         reset = 1;
         #10 reset = 0;
-        #100 $finish;   // enough time to see full cycle repeat
+        #100 $finish;   
     end
 endmodule
