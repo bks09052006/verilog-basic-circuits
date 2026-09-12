@@ -5,8 +5,8 @@ module ring_counter(
 );
     always @(posedge clk or posedge reset) begin
         if (reset)
-            q <= 4'b0001;   // seed value: single 1
+            q <= 4'b0001;  
         else
-            q <= {q[2:0], q[3]};   // shift left, wrap last bit to first
+            q <= {q[2:0], q[3]};  
     end
 endmodule
