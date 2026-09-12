@@ -24,7 +24,7 @@ module syn_up_counter_structural(
     assign t2 = q[0] & q[1];
     assign t3 = q[0] & q[1] & q[2];
 
-    // Added .reset(reset) to every instantiation
+    
     t_ff ff0(.clk(clk), .reset(reset), .t(t0), .q(q[0]));
     t_ff ff1(.clk(clk), .reset(reset), .t(t1), .q(q[1]));
     t_ff ff2(.clk(clk), .reset(reset), .t(t2), .q(q[2]));
